@@ -9,6 +9,19 @@
   font-family: system-ui, Arial, sans-serif;
 }
 
+/* ==========================================
+   GLOBAL ANCHOR RESET (Matching Your Theme)
+   ========================================== */
+a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+/* Dark Mode State */
+body.dark a {
+  color: #ffffff;
+}
+
 /* 🌤 LIGHT MODE */
 body {  
   background: #f0f2f5;  
