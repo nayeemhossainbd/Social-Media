@@ -583,6 +583,7 @@ body.dark .add-story {
   margin: 0;  
   color: #222;
   padding: 15px 10px;
+  border-radius: 10px;
 }
 
 /* IMAGE */
