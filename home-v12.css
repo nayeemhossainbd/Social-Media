@@ -730,3 +730,18 @@ body.dark .load-more {
 body.dark .load-more:hover {
   background: #2a2d33;
 }
+
+/* ==========================================
+   PART 7: VISIBILITY TOGGLE STYLES
+   ========================================== */
+
+/* SHOW ELEMENT */
+.show {
+  display: initial !important;
+}
+
+/* HIDE ELEMENT */
+.hide {
+  display: none !important;
+}
+
