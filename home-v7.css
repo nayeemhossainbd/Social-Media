@@ -512,7 +512,7 @@ body.dark .add-story {
 }
 
 .post-user small {  
-  font-size: 12px;  
+  font-size: 11px;  
   color: #777;
 }
 
@@ -626,12 +626,12 @@ body.dark .add-story {
 }
 
 .post-actions button span {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
   color: inherit;
   align-self: flex-start;
   margin-top: -3px;
-  margin-left: 1px;
+  margin-left: 0;
 }
 
 /* DARK MODE OVERRIDES */
