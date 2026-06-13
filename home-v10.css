@@ -580,9 +580,12 @@ body.dark .add-story {
 /* POST TEXT */
 .post-text {  
   font-size: 15px;  
-  margin: 0;  
+  margin: 10;  
   color: #222;
-  padding: 15px 10px;
+  padding: 5px 0;
+}
+
+.post-text:hover {  
   border-radius: 10px;
 }
 
