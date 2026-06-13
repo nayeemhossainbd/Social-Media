@@ -320,7 +320,7 @@ body.dark .app-footer a:hover {
 }
 
 /* SINGLE DIVIDER ONLY */
-.post-actions {  
+.post-action {  
   display: flex;  
   justify-content: space-around;  
   padding-top: 10px;  
