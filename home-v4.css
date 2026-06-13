@@ -574,8 +574,9 @@ body.dark .add-story {
 /* POST TEXT */
 .post-text {  
   font-size: 15px;  
-  margin: 15px 10px;  
+  margin: 10px;  
   color: #222;
+  padding: 5px 0;
 }
 
 /* IMAGE */
