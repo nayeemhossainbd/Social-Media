@@ -603,6 +603,8 @@ body.dark .add-story {
   display: flex;  
   align-items: center;  
   gap: 5px;
+  padding: 6px 12px;     
+  border-radius: 6px;    
 }
 
 .post-actions button:hover {
