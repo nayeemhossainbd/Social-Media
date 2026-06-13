@@ -591,9 +591,9 @@ a .post-text:hover {
 
 /* IMAGE */
 .post-img {  
-  width: 100%;  
+  max-width: 98%;  
   border-radius: 10px;  
-  margin: 10px;
+  margin: 5px 5px 10px 5px;
 }
 
 /* ACTIONS */
