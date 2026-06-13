@@ -577,16 +577,21 @@ body.dark .add-story {
   background: #f0f2f5;
 }
 
+/* POST BODY */
+.post-body a {  
+  display: block;
+}
+
+.post-body a:hover {  
+  border-radius: 10px;
+}
+
 /* POST TEXT */
 .post-text {  
   font-size: 15px;  
   margin: 10px;  
   color: #222;
   padding: 5px 0;
-}
-
-a .post-text:hover {  
-  border-radius: 10px;
 }
 
 /* IMAGE */
