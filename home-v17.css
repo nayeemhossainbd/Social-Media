@@ -43,7 +43,8 @@ a:active {
 /* ICONS */
 .icon-btn, .right-icons button {  
   width: 40px;  
-  height: 40px;  
+  height: 40px; 
+  color: #000;
   display: flex;  
   align-items: center;  
   justify-content: center;  
