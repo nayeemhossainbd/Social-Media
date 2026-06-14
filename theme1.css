@@ -392,6 +392,7 @@ body.dark .post-actions {
 /* STORY WRAPPER (FB STYLE NO AUTO ALIGN) */
 .story-bar {
   display: flex;
+  position: relative;
   justify-content: flex-start;
   gap: 10px;
   overflow-x: auto;
