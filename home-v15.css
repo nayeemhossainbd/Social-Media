@@ -9,24 +9,17 @@
   font-family: system-ui, Arial, sans-serif;
 }
 
-/* ==========================================
-   GLOBAL ANCHOR RESET (Matching Your Theme)
-   ========================================== */
-a {
-  color: #1877f2;
-  text-decoration: none;
-}
-
-/* Dark Mode State */
-body.dark a {
-  color: #ffffff;
-}
-
 /* 🌤 LIGHT MODE */
 body {  
   background: #f0f2f5;  
   color: #111;  
   transition: background .3s ease, color .3s ease;
+}
+
+
+a {
+  color: #1877f2;
+  text-decoration: none;
 }
 
 /* HEADER LIGHT */
@@ -163,6 +156,11 @@ body {
 body.dark {  
   background: #151518;  
   color: #fff;
+}
+
+/* Dark Mode State */
+body.dark a {
+  color: #ffffff;
 }
 
 /* HEADER DARK (LIGHTER THAN BLACK) */
