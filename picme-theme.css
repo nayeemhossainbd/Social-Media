@@ -1,0 +1,577 @@
+/* ==========================================================================
+   1. GENERAL STYLES
+   ========================================================================== */
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+a {
+	text-decoration: none; /* Remove underline */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #2c3e50;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+/* ==========================================================================
+   2. UTILITY CLASSES
+   ========================================================================== */
+.overflow {
+	overflow: hidden;
+}
+
+.padding {
+	padding: 0 !important;
+}
+
+.margin {
+	margin: 0 !important;
+}
+
+.cover {
+	object-fit: cover; /* Fill container proportionally */
+}
+
+.w3-padding-8 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+/* Text Transforms & Weights */
+.uppr { text-transform: uppercase; }
+.cpt  { text-transform: capitalize; }
+
+.b-100 { font-weight: 100; }
+.b-200 { font-weight: 200; }
+.b-300 { font-weight: 300; }
+.b-400 { font-weight: 400; }
+.b-500 { font-weight: 500; }
+.b-600 { font-weight: 600; }
+.b-700 { font-weight: 700; }
+.b-800 { font-weight: 800; }
+.b-900 { font-weight: 900; }
+
+/* Text Ellipsis (...) */
+.elipse {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.elipse-2 {
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* Limit to 2 lines */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.elipse-3 {
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* Limit to 3 lines */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Theme Colors */
+.color, .color-hover:hover { color: #FF9F00; }
+.theme, .theme-hover:hover { background-color: #f7b8cd5b; }
+
+/* Rotations */
+.rotate { transform(rotate: 45deg); }
+.rotate { transform: rotate(90deg); }
+
+/* Borders */
+s.border       { border: 1px solid #565656; }
+.border2        { border: 2px solid #565656; }
+.border3        { border: 3px solid #565656; }
+.border-bottom { border-bottom: 1px solid #565656; }
+.border-top    { border-top: 1px solid #565656; }
+.border-left   { border-left: 1px solid #565656; }
+.border-right  { border-right: 1px solid #565656; }
+
+/* Errors */
+.error {
+	padding: 8px 16px;
+	background-color: #ffdddd !important;
+	color: #f44336 !important;
+	border-left: 1px solid #f44336;
+	margin: 6px 0;
+}
+
+
+/* ==========================================================================
+   3. HEADER & NAVIGATION
+   ========================================================================== */
+.logo img {
+	height: 36px;
+}
+
+header {
+	position: sticky; /* Fixes header to top during scroll */
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+nav ul {
+	display: table; /* Dynamic horizontal width distribution */
+	width: 100%;
+}
+
+nav ul li {
+	display: table-cell;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav li a {
+	display: block;
+	padding: 8px 0;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+
+nav li a span {
+	font-size: 10px;
+	font-weight: 300;
+	display: block;
+	margin-top: -6px;
+}
+
+nav li a:hover, .active {
+	color: #e91e63 !important;
+	border-bottom: 1px solid #e91e63;
+	background-color: #f7b8cd5b;
+}
+
+nav li a b {
+	position: absolute;
+	top: 6px;
+	right: 12px; /* Top right corner badge alignment */
+}
+
+
+/* ==========================================================================
+   4. TITLES
+   ========================================================================== */
+.title {
+	margin: 0;
+	padding: 8px 0;
+	font-weight: 500;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.title::before {
+	content: ""; /* Accent top line bar indicator */
+	display: block;
+	width: 60px;
+	height: 1px;
+	background-color: #FF9F00;
+	margin-bottom: 8px;
+}
+
+.title::first-letter {
+	color: #FF9F00; /* Colors only the first letter */
+}
+
+
+/* ==========================================================================
+   5. LOGIN & REGISTER
+   ========================================================================== */
+/* Active inputs highlight */
+.login input[type=text]:focus,
+.login input[type=password]:focus,
+.login select:focus,
+.login textarea:focus {
+	outline: 3px solid #9b27b05e;
+	border: none !important;
+	background-color: #fce8ff;
+}
+
+/* Base Form Inputs */
+.login input[type=text],
+.login input[type=password],
+.login input[type=file],
+.login input[type=url],
+.login select,
+.login textarea {
+	width: 100%;
+	padding: 8px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+/* Date Pickers columns layout */
+.login .date select {
+	display: inline-block !important;
+	width: 28%;
+	margin-right: 2%;
+}
+
+/* Custom Checkbox elements */
+.login input[type=checkbox] {
+	width: 16px;
+	height: 16px;
+	border: 1px solid #9b27b05e;
+	border-radius: 8px;
+}
+
+.login input[checkboxed] {
+	width: 16px;
+	height: 16px;
+	background-color: #9b27b05e;
+	border-radius: 8px;
+}
+
+/* Submit Action Button */
+.login input[type=submit] {
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	border-radius: 8px;
+	width: 100%;
+	color: #fff !important;
+	background-color: #9c27b0 !important;
+}
+
+
+/* ==========================================================================
+   6. MESSAGES & CHAT
+   ========================================================================== */
+.msg ul {
+	display: none; /* Hidden drop-downs initialization */
+}
+
+/* Letter Avatar Placeholder Block */
+.msg-user {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border: 4px solid #eee;
+	text-align: center;
+	background: #607d8b;
+	color: #fff;
+	font-size: 30px;
+	padding: 4px 0 5px 14px;
+}
+
+/* CSS Trick: Hides username text except for the first letter */
+.msg-user span {
+	visibility: hidden;
+	display: block;
+}
+
+.msg-user span:first-letter {
+	visibility: visible;
+}
+
+ul.show {
+	display: block; /* Toggles element visibility */
+}
+
+/* Chat bubble styling */
+.msg-text {
+	border-radius: 6px 20px 20px 20px;
+	z-index: 3;
+}
+
+.msg-text::before {
+	content: ""; /* Left side chat pointer triangle arrow */
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	position: absolute;
+	top: 16px;
+	left: -8px;
+	transform: rotate(45deg);
+	background: white;
+}
+
+.reply-msg input:focus,
+.chat input:focus {
+	outline: none;
+}
+
+.write-message {
+	display: none;
+}
+
+
+/* ==========================================================================
+   7. POST COMPONENT
+   ========================================================================== */
+.post-header img {
+	width: 50px;
+	height: 50px;
+	background: #efefef;
+	padding: 4px;
+}
+
+.post-img img {
+	width: 100%;
+}
+
+/* Content labels/tags pills */
+.post-text .w3-cell span {
+	display: inline-block;
+	padding: 4px 8px;
+	background-color: #efefef;
+	border-radius: 16px;
+}
+
+/* Floating dynamic submenus positioning layout */
+.post .w3-ul {
+	width: 120px;
+	right: 40px;
+	position: absolute;
+	top: 0;
+}
+
+ul.w3-text {
+	width: 260px;
+}
+
+/* Floating Action Button (FAB) elements */
+.add {
+	position: fixed; /* Anchored screen positions layout */
+	right: 24px;
+	bottom: 30px;
+}
+
+.add span {
+	display: inline-block;
+	background-color: #e91e62ee;
+	color: #fff;
+	font-size: 30px;
+	padding: 12px;
+	border-radius: 50%; /* Renders perfectly circular buttons design shape */
+	width: 60px;
+	height: 60px;
+	text-align: center;
+}
+
+.add .w3-text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-bottom: 72px;
+}
+
+.add a {
+	margin-top: 12px;
+}
+
+
+/* ==========================================================================
+   8. COMMENTS
+   ========================================================================== */
+.comment-text::before {
+	content: ""; /* Comment triangle point pointer arrow element */
+	background-color: #efefef;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: -10px;
+	top: 20px;
+	transform: rotate(-45deg);
+	border-radius: 4px;
+}
+
+.comment-img img {
+	width: 50px;
+	height: 50px;
+	padding: 4px;
+}
+
+/* Threads nesting configurations */
+.respond {
+	margin-left: 30px !important; /* Nested child items offsets indent */
+}
+
+.respond .reply {
+	display: none;
+}
+
+.comment-form-img {
+	width: 40px;
+	height: 40px;
+}
+
+.comment-form input:focus {
+	outline: none;
+}
+
+
+/* ==========================================================================
+   9. PEOPLE (USER ROWS)
+   ========================================================================== */
+.people img {
+	width: 60px;
+	height: 60px;
+	padding: 4px;
+}
+
+
+/* ==========================================================================
+   10. PAGINATION
+   ========================================================================== */
+.page {
+	display: block;
+}
+
+.page a,
+.page span {
+	display: inline-block;
+	padding: 8px 16px;
+	border-radius: 12px;
+}
+
+.page span {
+	background-color: #f7b8cd5b; /* Active current item index visual styles */
+	color: #e91e63;
+}
+
+.page a {
+	background-color: #e7e2e2;
+}
+
+.page a:hover {
+	background-color: #e91e63;
+	color: #fff;
+}
+
+
+/* ==========================================================================
+   11. PROFILE HERO OVERLAYS
+   ========================================================================== */
+.cover-img {
+	height: 120px;
+	background-color: #f7b8cd5b;
+	margin-bottom: -80px; /* Pulls lower timeline blocks inside header view area bounds */
+	z-index: -222;
+}
+
+.cover-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.profile-img .btn-photo {
+	background-color: #ffffffee;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.profile-img {
+	z-index: 1;
+}
+
+/* Profile image frame properties definitions */
+.profile-img img {
+	width: 150px;
+	height: 150px;
+	z-index: 999;
+	background: #fff;
+	padding: 4px;
+}
+
+
+/* ==========================================================================
+   12. PHOTOS & AVATARS GALLERIES
+   ========================================================================== */
+.avatars img,
+.avatars a {
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	margin-bottom: 6px;
+}
+
+.photos img,
+.photos a {
+	width: 100%;
+	height: 120px;
+	border: 0.5px solid #e91e63;
+	display: inline-block;
+	object-fit: cover;
+}
+
+#photo {
+	max-width: 100%;
+	margin-top: 60px;
+}
+
+
+/* ==========================================================================
+   13. THEME BACKDROP COVERS MATRIX (bgs)
+   ========================================================================== */
+/* Horizontal scrolling choices slider rules panel */
+.bg-container {
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.bgs {
+	width: 1024px;
+}
+
+.bgs div {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	border-radius: 6px;
+	margin-right: 16px;
+	border: 1px solid #cfcfcf;
+}
+
+.bgs div:last-child {
+	margin-right: 0;
+}
+
+/* Color palettes selector arrays definitions rules */
+.bg1 { background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%); }
+.bg2 { background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 12) 35%, rgba(0, 212, 255, 1) 100%); }
+.bg3 { background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); }
+.bg4 { background: linear-gradient(30deg, rgba(253, 220, 29, 1) 0%, rgba(18, 190, 226, 1) 48%, rgba(187, 46, 46, 1) 100%); }
+.bg5 { background: linear-gradient(0deg, rgba(75, 180, 58, 1) 0%, rgba(253, 29, 240, 1) 50%, rgba(69, 251, 252, 1) 100%); }
+.bg6 { background: linear-gradient(0deg, rgba(75, 180, 58, 1) 0%, rgba(105, 253, 29, 1) 0%, rgba(252, 69, 193, 1) 100%); }
+.bg7 { background: linear-gradient(180deg, rgba(191, 0, 154, 1) 0%, rgba(184, 0, 0, 1) 100%); }
+.bg8 { background: #1d30fd; }
+.bg9 { background: #fd1d9a; }
+.bg10 { background: #1de5fd; }
+
+/* Combined thumbnails options styles definitions rule mapping */
+.bg1, .bg2, .bg3, .bg4, .bg5, .bg6, .bg7, .bg8, .bg9, .bg10 {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	padding: 32px 0;
+	font-weight: 800;
+	border: none !important;
+}
+
+/* Expanded component variation targets mapping styling definitions rule */
+p.bg1, p.bg2, p.bg3, p.bg4, p.bg5, p.bg6, p.bg7, p.bg8, p.bg9, p.bg10 {
+	min-height: 140px !important;
+	padding: 32px;
+  }
+    
