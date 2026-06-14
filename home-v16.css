@@ -16,10 +16,15 @@ body {
   transition: background .3s ease, color .3s ease;
 }
 
-
 a {
-  color: #1877f2;
+  color: #65676b;
   text-decoration: none;
+}
+a:hover {
+  color: #4f5256;
+}
+a:active {
+  color: #3f4246;
 }
 
 /* HEADER LIGHT */
