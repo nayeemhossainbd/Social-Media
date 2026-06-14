@@ -122,15 +122,16 @@ a:active {
 }
 
 /* LINKS */
-.drawer a {  
-  display: flex;  
-  align-items: center;  
-  gap: 10px;  
-  padding: 11px;  
-  text-decoration: none;  
-  color: #222;  
-  border-radius: 8px;  
+.drawer a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px;
+  text-decoration: none;
+  color: #222;
+  border-radius: 8px;
   transition: .2s;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .drawer a:hover {  
@@ -182,8 +183,9 @@ body.dark .drawer {
 }
 
 /* LINKS DARK */
-body.dark .drawer a {  
+body.dark .drawer a {
   color: #fff;
+  border-bottom: 1px solid #2a2d35;
 }
 
 body.dark .drawer a:hover {  
