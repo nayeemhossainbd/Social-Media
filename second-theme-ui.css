@@ -127,6 +127,13 @@
   margin-bottom: 8px;  
   opacity: 0.9;
 }
+.no-comment h2{
+  font-size:18px;
+  font-weight:600;
+  color:#65676b;
+  margin:10px 0 0;
+  text-align:center;
+}
 .no-comment p {  
   margin: 0;  
   font-size: 14px;  
@@ -174,6 +181,9 @@ body.dark .no-comment i {
 }
 body.dark .no-comment p {  
   color: #b0b3b8;
+}
+body.dark .no-comment h2{
+  color:#b0b3b8;
 }
 
 
