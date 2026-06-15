@@ -128,10 +128,10 @@
   opacity: 0.9;
 }
 .no-comment h2{
-  font-size:18px;
-  font-weight:600;
+  font-size:16px;
+  font-weight:400;
   color:#65676b;
-  margin:10px 0 0;
+  margin:10px;
   text-align:center;
 }
 .no-comment p {  
