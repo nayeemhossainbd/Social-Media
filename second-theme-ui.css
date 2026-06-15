@@ -1,0 +1,516 @@
+/* ==========================================================================
+   PART 1: COMMENT UI
+   ========================================================================== */
+
+/* 1. Main Wrapper & Container */
+.comment-wrap {  
+  max-width: 600px;  
+  margin: auto;  
+  background: #fff;  
+  font-family: Helvetica, Arial, sans-serif;  
+  color: #1c1e21;  
+  transition: 0.3s ease;
+}
+
+/* 2. Comment Input Form */
+.comment-form {  
+  padding: 10px 12px;  
+  border-top: 1px solid #e4e6eb;
+}
+.comment-input-row {  
+  display: flex;  
+  gap: 8px;  
+  align-items: flex-end;
+}
+.comment-input-row textarea {  
+  flex: 1;  
+  border: none;  
+  background: #f0f2f5;  
+  border-radius: 18px;  
+  padding: 10px 12px;  
+  font-size: 14px;  
+  outline: none;  
+  resize: none;  
+  height: 40px;  
+  color: #1c1e21;
+}
+.comment-input-row button {  
+  background: #1877f2;  
+  border: none;  
+  color: #fff;  
+  padding: 8px 14px;  
+  border-radius: 18px;  
+  font-size: 13px;  
+  cursor: pointer;  
+  height: 40px;
+}
+
+/* 3. List & Layout Items */
+.comment-list {  
+  padding: 10px 12px;
+}
+.comment-item {  
+  display: flex;  
+  gap: 8px;  
+  margin-bottom: 12px;
+}
+.comment-avatar {  
+  width: 32px;  
+  height: 32px;  
+  border-radius: 50%;  
+  object-fit: cover;
+}
+
+/* 4. Text Content & Bubbles */
+.comment-bubble {  
+  display: inline-block;  
+  background: #f0f2f5;  
+  padding: 6px 10px;  
+  border-radius: 16px;
+}
+.comment-name {  
+  display: block;  
+  font-size: 14px;  
+  font-weight: 600;  
+  color: #050505;  
+  margin-bottom: 2px; 
+  text-transform: capitalize;
+}
+.comment-text {  
+  font-size: 14px;  
+  color: #1c1e21;
+}
+.comment-meta {  
+  font-size: 12px;  
+  color: #65676b;  
+  margin-left: 42px;  
+  margin-top: 3px;
+}
+.comment-meta span {  
+  margin-right: 10px;  
+  cursor: pointer;
+}
+
+/* 5. Nested Replies */
+.reply {  
+  margin-left: 40px;  
+  margin-top: 10px;  
+  border-left: 2px solid #e4e6eb;  
+  padding-left: 8px;
+}
+.reply-bubble {  
+  display: inline-block;  
+  align-items: center;  
+  background: #f0f2f5;  
+  font-size: 12px;  
+  padding: 6px 10px;  
+  border-radius: 16px;
+}
+.reply-name {  
+  display: inline-block;  
+  font-weight: 600;  
+  color: #050505;  
+  margin-right: 6px;  
+  text-transform: capitalize;
+}
+
+/* 6. Empty State */
+.no-comment {  
+  text-align: center;  
+  padding: 25px 10px;  
+  color: #8a8d91;
+}
+.no-comment i {  
+  font-size: 48px;  
+  color: #bcc0c4;  
+  display: block;  
+  margin-bottom: 8px;  
+  opacity: 0.9;
+}
+.no-comment p {  
+  margin: 0;  
+  font-size: 14px;  
+  color: #8a8d91;
+}
+
+/* 🌙 Dark Mode (At the end of Part 1) */
+body.dark .comment-wrap {  
+  background: #18191a;  
+  color: #e4e6eb;
+}
+body.dark .comment-form {  
+  border-top: 1px solid #3a3b3c;
+}
+body.dark .comment-input-row textarea {  
+  background: #242526;  
+  color: #e4e6eb;
+}
+body.dark .comment-bubble {  
+  background: #242526;
+}
+body.dark .comment-name {  
+  color: #e4e6eb;
+}
+body.dark .comment-text {  
+  color: #e4e6eb;
+}
+body.dark .comment-meta {  
+  color: #b0b3b8;
+}
+body.dark .reply {  
+  border-left: 2px solid #3a3b3c;
+}
+body.dark .reply-bubble {  
+  background: #242526;
+}
+body.dark .reply-name {  
+  color: #e4e6eb;
+}
+body.dark .no-comment {  
+  color: #b0b3b8;
+}
+body.dark .no-comment i {  
+  color: #6c6f73;
+}
+body.dark .no-comment p {  
+  color: #b0b3b8;
+}
+
+
+/* ==========================================================================
+   PART 2: LOGIN UI
+   ========================================================================== */
+
+/* 1. Page Layout & Card Container */
+.login-page {  
+  min-height: auto;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  padding: 20px;
+}
+.login-card {  
+  width: 100%;  
+  max-width: 380px;  
+  background: #fff;  
+  border-radius: 16px;  
+  padding: 24px;  
+  text-align: center;  
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+.login-logo {  
+  width: 70px;  
+  height: 70px;  
+  margin: 0 auto 15px;  
+  border-radius: 50%;  
+  background: #1877f2;  
+  color: #fff;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  font-size: 32px;
+}
+.login-card h2 {  
+  margin: 0;  
+  font-size: 24px;
+}
+.login-card p {  
+  margin: 8px 0 20px;  
+  color: #65676b;  
+  font-size: 14px;
+}
+
+/* 2. Form Inputs & Elements */
+.login-form input {  
+  width: 100%;  
+  height: 48px;  
+  border: 1px solid #ddd;  
+  border-radius: 12px;  
+  padding: 0 14px;  
+  margin-bottom: 12px;  
+  outline: none;
+}
+.pass-box {
+  position: relative;
+  height: 48px;
+}
+.pass-box input {  
+  height: 48px;
+}
+.pass-box i {  
+  position: absolute;  
+  right: 12px;  
+  top: 0;  
+  bottom: 0;  
+  display: flex;  
+  align-items: center;  
+  cursor: pointer;  
+  font-size: 18px;  
+  color: #65676b;
+}
+.remember-box {  
+  display: flex;  
+  align-items: center;  
+  gap: 8px;  
+  font-size: 13px;  
+  color: #65676b;  
+  margin: 10px 0;  
+  cursor: pointer;
+}
+.remember-box input {  
+  width: 16px;  
+  height: 16px;  
+  margin: 0;  
+  accent-color: #1877f2;
+}
+.remember-box span {  
+  line-height: 1;
+}
+
+/* 3. Buttons & Links */
+.login-form button {  
+  width: 100%;  
+  height: 48px;  
+  border: none;  
+  border-radius: 12px;  
+  background: #1877f2;  
+  color: #fff;  
+  font-weight: 600;  
+  cursor: pointer;
+}
+.forgot-link {  
+  display: block;  
+  margin: 15px 0;  
+  text-decoration: none;  
+  color: #1877f2;  
+  font-size: 14px;
+}
+.create-account {  
+  display: block;  
+  width: 100%;  
+  padding: 12px 20px;  
+  border-radius: 12px;  
+  background: #42b72a;  
+  color: #fff;  
+  text-decoration: none;  
+  font-weight: 600;  
+  text-align: center;  
+  box-sizing: border-box; 
+  height: 48px;
+}
+
+/* 4. Content Divider */
+.login-divider {  
+  position: relative;  
+  margin: 20px 0;
+}
+.login-divider:before {  
+  content: "";  
+  position: absolute;  
+  top: 50%;  
+  left: 0;  
+  right: 0;  
+  height: 1px;  
+  background: #ddd;
+}
+.login-divider span {  
+  position: relative;  
+  background: #fff;  
+  padding: 0 10px;  
+  color: #65676b;  
+  font-size: 13px;
+}
+
+/* 🌙 Dark Mode (At the end of Part 2) */
+body.dark .login-card {  
+  background: #1c1c1c;  
+  box-shadow: none;
+}
+body.dark .login-card h2 {  
+  color: #fff;
+}
+body.dark .login-card p,
+body.dark .login-divider span {  
+  color: #b0b3b8;
+}
+body.dark .login-divider:before {  
+  background: #3a3b3c;
+}
+body.dark .login-form input {  
+  background: #242526;  
+  border-color: #3a3b3c;  
+  color: #fff;
+}
+body.dark .login-form input::placeholder {  
+  color: #b0b3b8;
+}
+body.dark .login-divider span {  
+  background: #1c1c1c;
+}
+body.dark .remember-box {  
+  color: #b0b3b8;
+}
+body.dark .pass-box i {  
+  color: #b0b3b8;
+}
+
+
+/* ==========================================================================
+   PART 3: REGISTER UI
+   ========================================================================== */
+
+/* 1. Page Layout & Card Container */
+.register-page {  
+  min-height: auto;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  padding: 20px;  
+  font-family: Helvetica, Arial, sans-serif;
+}
+.register-card {  
+  width: 100%;  
+  max-width: 420px;  
+  background: #fff;  
+  border-radius: 16px;  
+  padding: 24px;  
+  text-align: center;  
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+.register-logo {  
+  width: 70px;  
+  height: 70px;  
+  margin: 0 auto 15px;  
+  border-radius: 50%;  
+  background: #1877f2;  
+  color: #fff;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  font-size: 32px;
+}
+.register-card h2 {  
+  margin: 0;  
+  font-size: 24px;
+}
+.register-card p {  
+  margin: 8px 0 20px;  
+  color: #65676b;  
+  font-size: 14px;
+}
+
+/* 2. Form Inputs, Selects & Checkboxes */
+.register-form input,
+.register-form select {  
+  width: 100%;  
+  height: 48px;  
+  border: 1px solid #ddd;  
+  border-radius: 12px;  
+  padding: 0 14px;  
+  margin-bottom: 12px;  
+  outline: none;  
+  background: #fff;
+}
+.check-box {  
+  display: flex;  
+  align-items: center;  
+  gap: 8px;  
+  font-size: 13px;  
+  color: #65676b;  
+  margin-bottom: 12px;  
+  cursor: pointer;
+}
+.check-box input {  
+  width: 16px;  
+  height: 16px;  
+  accent-color: #1877f2;  
+  margin: 0;
+}
+.check-box a {  
+  color: #1877f2;  
+  text-decoration: none;
+}
+
+/* 3. Birthday Selection Layout */
+.birthday-box {  
+  margin-bottom: 12px;  
+  text-align: left;
+}
+.birthday-box label {  
+  display: block;  
+  font-size: 14px;  
+  margin-bottom: 6px;  
+  color: #65676b;
+}
+.birthday-row {  
+  display: flex;  
+  gap: 8px;
+}
+.birthday-row select {  
+  flex: 1;  
+  height: 48px;  
+  border: 1px solid #ddd;  
+  border-radius: 12px;  
+  padding: 0 8px;  
+  outline: none;
+}
+
+/* 4. Buttons & Interactive Links */
+.register-form button {  
+  width: 100%;  
+  height: 48px;  
+  border: none;  
+  border-radius: 12px;  
+  background: #1877f2;  
+  color: #fff;  
+  font-weight: 600;  
+  cursor: pointer;
+}
+.register-divider {  
+  margin: 18px 0 12px;  
+  color: #65676b;  
+  font-size: 14px;
+}
+.login-link {  
+  display: block;  
+  width: 100%; 
+  height: 48px; 
+  text-align: center;  
+  padding: 12px 20px;  
+  border-radius: 12px;  
+  background: #2ea043;  
+  color: #fff;  
+  text-decoration: none;  
+  font-weight: 600;  
+  box-sizing: border-box;
+}
+
+/* 🌙 Dark Mode (At the end of Part 3) */
+body.dark .register-card {  
+  background: #1c1c1c;  
+  box-shadow: none;
+}
+body.dark .register-card h2 {  
+  color: #fff;
+}
+body.dark .register-card p,
+body.dark .register-divider,
+body.dark .birthday-box label {  
+  color: #b0b3b8;
+}
+body.dark .register-form input,
+body.dark .register-form select {  
+  background: #242526;  
+  border-color: #3a3b3c;  
+  color: #fff;
+}
+body.dark .login-link {  
+  background: #2ea043;
+}
+body.dark .check-box {  
+  color: #b0b3b8;
+}
+body.dark .check-box a {  
+  color: #4ea1ff;
+}
+
