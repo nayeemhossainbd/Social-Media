@@ -66,6 +66,7 @@
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
+  background: #fff;
   border: 3px solid #fff;
 }
 
@@ -220,6 +221,7 @@ body.dark .profile-tabs a:hover {
 
 body.dark .profile-avatar img {
   border-color: #242526;
+  background: #242526;
 }
 
 body.dark .edit-avatar {
