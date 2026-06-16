@@ -304,9 +304,9 @@ body.dark .edit-cover:hover {
 }
 
 /* INPUTS */
-.edit-profile-page input, 
-.edit-profile-page textarea, 
-.edit-profile-page select {
+input, 
+textarea, 
+select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
