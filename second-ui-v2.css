@@ -304,9 +304,9 @@ body.dark .edit-cover:hover {
 }
 
 /* INPUTS */
-input, 
-textarea, 
-select {
+.edit-block input, 
+.edit-block textarea, 
+.edit-block select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -317,7 +317,7 @@ select {
 }
 
 /* TEXTAREA */
-textarea {
+.edit-block textarea {
   min-height: 80px;
   resize: none;
 }
@@ -360,9 +360,9 @@ body.dark .ui-form-card {
   background: #242526;
 }
 
-body.dark input,
-body.dark textarea,
-body.dark select {
+body.dark .edit-block input,
+body.dark .edit-block textarea,
+body.dark .edit-block select {
   background: #3a3b3c;
   border-color: #555;
   color: #e4e6eb;
