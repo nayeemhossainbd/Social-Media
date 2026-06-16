@@ -372,6 +372,11 @@ body.dark .ui-header a {
   color: #2d88ff;
 }
 
+body.dark .save-btn{
+  background:#1877f2;
+  color:#fff;
+}
+
 
 /* ==========================================
    PART 3: COMMENT UI
