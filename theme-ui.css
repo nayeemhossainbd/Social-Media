@@ -1,8 +1,383 @@
-/* ==========================================================================
-   PART 1: COMMENT UI
-   ========================================================================== */
+/* ==========================================
+   PART 1: PROFILE PAGE
+   ========================================== */
 
-/* 1. Main Wrapper & Container */
+/* PROFILE PAGE */
+.profile-page {
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+/* COVER */
+.profile-cover {
+  position: relative;
+}
+
+.profile-cover img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* COVER EDIT */
+.edit-cover {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.edit-cover:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* HEADER */
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  margin-top: -20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* AVATAR */
+.profile-avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.profile-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+/* AVATAR EDIT */
+.edit-avatar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 28px;
+  height: 28px;
+  background: #1877f2;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border: 2px solid #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.edit-avatar:hover {
+  background: #166fe5;
+}
+
+/* NAME SECTION */
+.profile-name {
+  margin-left: 10px;
+  min-width: 0;
+}
+
+.profile-name h2 {
+  font-size: 16px;
+  margin: 0;
+  color: #050505;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-name p {
+  font-size: 12px;
+  color: #65676b;
+  margin: 2px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ACTION BUTTONS */
+.profile-actions {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.follow {
+  background: #1877f2;
+  color: #fff;
+}
+
+.message {
+  background: #e4e6eb;
+  color: #050505;
+}
+
+.edit {
+  background: #f0f2f5;
+  color: #050505;
+}
+
+/* TABS */
+.profile-tabs {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  overflow-x: auto;
+}
+
+.profile-tabs a {
+  font-size: 13px;
+  color: #65676b;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.profile-tabs a:hover {
+  background: #f0f2f5;
+  color: #050505;
+}
+
+/* CONTENT AREA */
+.profile-content {
+  padding: 10px;
+}
+
+/* DARK MODE PROFILE */
+body.dark .profile-page {
+  background: #18191a;
+}
+
+body.dark .profile-header,
+body.dark .profile-actions,
+body.dark .profile-tabs {
+  background: #242526;
+}
+
+body.dark .profile-name h2 {
+  color: #e4e6eb;
+}
+
+body.dark .profile-name p {
+  color: #b0b3b8;
+}
+
+body.dark .message {
+  background: #3a3b3c;
+  color: #e4e6eb;
+}
+
+body.dark .edit {
+  background: #3a3b3c;
+  color: #e4e6eb;
+}
+
+body.dark .profile-tabs a {
+  color: #b0b3b8;
+}
+
+body.dark .profile-tabs a:hover {
+  background: #3a3b3c;
+  color: #fff;
+}
+
+body.dark .profile-avatar img {
+  border-color: #242526;
+}
+
+body.dark .edit-avatar {
+  background: #2d88ff;
+  border: 2px solid #242526;
+  color: #fff;
+}
+
+body.dark .edit-avatar:hover {
+  background: #1b74e4;
+}
+
+body.dark .edit-cover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #e4e6eb;
+}
+
+body.dark .edit-cover:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+/* ==========================================
+   PART 2: EDIT PROFILE PAGE
+   ========================================== */
+
+/* EDIT PROFILE PAGE */
+.edit-profile-page {
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.ui-header {
+  background: #fff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 8px 10px;
+  border: 1px solid #e4e6eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ui-header h2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #65676b;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ui-header h2 i {
+  font-size: 18px;
+}
+
+.ui-header a {
+  font-size: 12px;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+/* FORM */
+.ui-form-card {
+  background: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* LABELS */
+.edit-block label {
+  font-size: 12px;
+  color: #65676b;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* INPUTS */
+.edit-profile-page input, 
+.edit-profile-page textarea, 
+.edit-profile-page select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+  background: #fff;
+}
+
+/* TEXTAREA */
+textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+/* DOB */
+.dob-row {
+  display: flex;
+  gap: 6px;
+}
+
+.dob-row select {
+  flex: 1;
+}
+
+/* BUTTON */
+.save-btn {
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* DARK MODE EDIT PROFILE */
+body.dark .edit-profile-page {
+  background: #18191a;
+}
+
+body.dark .ui-header {
+  background: #242526;
+  border-color: #3a3b3c;
+}
+
+body.dark .ui-header h2 {
+  color: #e4e6eb;
+}
+
+body.dark .ui-form-card {
+  background: #242526;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background: #3a3b3c;
+  border-color: #555;
+  color: #e4e6eb;
+}
+
+body.dark .ui-header a {
+  color: #2d88ff;
+}
+
+
+/* ==========================================
+   PART 3: COMMENT UI
+   ========================================== */
+
+/* MAIN WRAPPER */
 .comment-wrap {  
   max-width: 600px;  
   margin: auto;  
@@ -12,16 +387,18 @@
   transition: 0.3s ease;
 }
 
-/* 2. Comment Input Form */
+/* COMMENT INPUT FORM */
 .comment-form {  
   padding: 10px 12px;  
   border-top: 1px solid #e4e6eb;
 }
+
 .comment-input-row {  
   display: flex;  
   gap: 8px;  
   align-items: flex-end;
 }
+
 .comment-input-row textarea {  
   flex: 1;  
   border: none;  
@@ -34,6 +411,7 @@
   height: 40px;  
   color: #1c1e21;
 }
+
 .comment-input-row button {  
   background: #1877f2;  
   border: none;  
@@ -45,15 +423,17 @@
   height: 40px;
 }
 
-/* 3. List & Layout Items */
+/* LIST & LAYOUT ITEMS */
 .comment-list {  
   padding: 10px 12px;
 }
+
 .comment-item {  
   display: flex;  
   gap: 8px;  
   margin-bottom: 12px;
 }
+
 .comment-avatar {  
   width: 32px;  
   height: 32px;  
@@ -61,13 +441,14 @@
   object-fit: cover;
 }
 
-/* 4. Text Content & Bubbles */
+/* TEXT CONTENT & BUBBLES */
 .comment-bubble {  
   display: inline-block;  
   background: #f0f2f5;  
   padding: 6px 10px;  
   border-radius: 16px;
 }
+
 .comment-name {  
   display: block;  
   font-size: 14px;  
@@ -76,28 +457,32 @@
   margin-bottom: 2px; 
   text-transform: capitalize;
 }
+
 .comment-text {  
   font-size: 14px;  
   color: #1c1e21;
 }
+
 .comment-meta {  
   font-size: 12px;  
   color: #65676b;  
   margin-left: 42px;  
   margin-top: 3px;
 }
+
 .comment-meta span {  
   margin-right: 10px;  
   cursor: pointer;
 }
 
-/* 5. Nested Replies */
+/* NESTED REPLIES */
 .reply {  
   margin-left: 40px;  
   margin-top: 10px;  
   border-left: 2px solid #e4e6eb;  
   padding-left: 8px;
 }
+
 .reply-bubble {  
   display: inline-block;  
   align-items: center;  
@@ -106,6 +491,7 @@
   padding: 6px 10px;  
   border-radius: 16px;
 }
+
 .reply-name {  
   display: inline-block;  
   font-weight: 600;  
@@ -114,12 +500,13 @@
   text-transform: capitalize;
 }
 
-/* 6. Empty State */
+/* EMPTY STATE */
 .no-comment {  
   text-align: center;  
   padding: 25px 10px;  
   color: #8a8d91;
 }
+
 .no-comment i {  
   font-size: 48px;  
   color: #bcc0c4;  
@@ -127,71 +514,86 @@
   margin-bottom: 8px;  
   opacity: 0.9;
 }
-.no-comment h2{
-  font-size:16px;
-  font-weight:400;
-  color:#65676b;
-  margin:10px;
-  text-align:center;
+
+.no-comment h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #65676b;
+  margin: 10px;
+  text-align: center;
 }
+
 .no-comment p {  
   margin: 0;  
   font-size: 12px;  
   color: #8a8d91;
 }
 
-/* 🌙 Dark Mode (At the end of Part 1) */
+/* DARK MODE COMMENT */
 body.dark .comment-wrap {  
   background: #18191a;  
   color: #e4e6eb;
 }
+
 body.dark .comment-form {  
   border-top: 1px solid #3a3b3c;
 }
+
 body.dark .comment-input-row textarea {  
   background: #242526;  
   color: #e4e6eb;
 }
+
 body.dark .comment-bubble {  
   background: #242526;
 }
+
 body.dark .comment-name {  
   color: #e4e6eb;
 }
+
 body.dark .comment-text {  
   color: #e4e6eb;
 }
+
 body.dark .comment-meta {  
   color: #b0b3b8;
 }
+
 body.dark .reply {  
   border-left: 2px solid #3a3b3c;
 }
+
 body.dark .reply-bubble {  
   background: #242526;
 }
+
 body.dark .reply-name {  
   color: #e4e6eb;
 }
+
 body.dark .no-comment {  
   color: #b0b3b8;
 }
+
 body.dark .no-comment i {  
   color: #6c6f73;
 }
+
 body.dark .no-comment p {  
   color: #b0b3b8;
 }
-body.dark .no-comment h2{
-  color:#b0b3b8;
+
+body.dark .no-comment h2 {
+  color: #b0b3b8;
 }
 
 
-/* ==========================================================================
-   PART 2: LOGIN UI
-   ========================================================================== */
+/* ==========================================
+   PART 4: LOGIN UI
+   ========================================== */
 
-/* 1. Page Layout & Card Container */
+/* PAGE LAYOUT & CONTAINER */
 .login-page {  
   min-height: auto;  
   display: flex;  
@@ -199,6 +601,7 @@ body.dark .no-comment h2{
   justify-content: center;  
   padding: 20px;
 }
+
 .login-card {  
   width: 100%;  
   max-width: 380px;  
@@ -208,6 +611,7 @@ body.dark .no-comment h2{
   text-align: center;  
   box-shadow: 0 2px 12px rgba(0,0,0,.08);
 }
+
 .login-logo {  
   width: 70px;  
   height: 70px;  
@@ -220,17 +624,19 @@ body.dark .no-comment h2{
   justify-content: center;  
   font-size: 32px;
 }
+
 .login-card h2 {  
   margin: 0;  
   font-size: 24px;
 }
+
 .login-card p {  
   margin: 8px 0 20px;  
   color: #65676b;  
   font-size: 14px;
 }
 
-/* 2. Form Inputs & Elements */
+/* FORM INPUTS & ELEMENTS */
 .login-form input {  
   width: 100%;  
   height: 48px;  
@@ -240,13 +646,16 @@ body.dark .no-comment h2{
   margin-bottom: 12px;  
   outline: none;
 }
+
 .pass-box {
   position: relative;
   height: 48px;
 }
+
 .pass-box input {  
   height: 48px;
 }
+
 .pass-box i {  
   position: absolute;  
   right: 12px;  
@@ -258,6 +667,7 @@ body.dark .no-comment h2{
   font-size: 18px;  
   color: #65676b;
 }
+
 .remember-box {  
   display: flex;  
   align-items: center;  
@@ -267,17 +677,19 @@ body.dark .no-comment h2{
   margin: 10px 0;  
   cursor: pointer;
 }
+
 .remember-box input {  
   width: 16px;  
   height: 16px;  
   margin: 0;  
   accent-color: #1877f2;
 }
+
 .remember-box span {  
   line-height: 1;
 }
 
-/* 3. Buttons & Links */
+/* BUTTONS & LINKS */
 .login-form button {  
   width: 100%;  
   height: 48px;  
@@ -288,6 +700,7 @@ body.dark .no-comment h2{
   font-weight: 600;  
   cursor: pointer;
 }
+
 .forgot-link {  
   display: block;  
   margin: 15px 0;  
@@ -295,6 +708,7 @@ body.dark .no-comment h2{
   color: #1877f2;  
   font-size: 14px;
 }
+
 .create-account {  
   display: block;  
   width: 100%;  
@@ -309,11 +723,12 @@ body.dark .no-comment h2{
   height: 48px;
 }
 
-/* 4. Content Divider */
+/* CONTENT DIVIDER */
 .login-divider {  
   position: relative;  
   margin: 20px 0;
 }
+
 .login-divider:before {  
   content: "";  
   position: absolute;  
@@ -323,6 +738,7 @@ body.dark .no-comment h2{
   height: 1px;  
   background: #ddd;
 }
+
 .login-divider span {  
   position: relative;  
   background: #fff;  
@@ -331,45 +747,53 @@ body.dark .no-comment h2{
   font-size: 13px;
 }
 
-/* 🌙 Dark Mode (At the end of Part 2) */
+/* DARK MODE LOGIN */
 body.dark .login-card {  
   background: #1c1c1c;  
   box-shadow: none;
 }
+
 body.dark .login-card h2 {  
   color: #fff;
 }
+
 body.dark .login-card p,
 body.dark .login-divider span {  
   color: #b0b3b8;
 }
+
 body.dark .login-divider:before {  
   background: #3a3b3c;
 }
+
 body.dark .login-form input {  
   background: #242526;  
   border-color: #3a3b3c;  
   color: #fff;
 }
+
 body.dark .login-form input::placeholder {  
   color: #b0b3b8;
 }
+
 body.dark .login-divider span {  
   background: #1c1c1c;
 }
+
 body.dark .remember-box {  
   color: #b0b3b8;
 }
+
 body.dark .pass-box i {  
   color: #b0b3b8;
 }
 
 
-/* ==========================================================================
-   PART 3: REGISTER UI
-   ========================================================================== */
+/* ==========================================
+   PART 5: REGISTER UI
+   ========================================== */
 
-/* 1. Page Layout & Card Container */
+/* PAGE LAYOUT & CONTAINER */
 .register-page {  
   min-height: auto;  
   display: flex;  
@@ -378,6 +802,7 @@ body.dark .pass-box i {
   padding: 20px;  
   font-family: Helvetica, Arial, sans-serif;
 }
+
 .register-card {  
   width: 100%;  
   max-width: 420px;  
@@ -387,6 +812,7 @@ body.dark .pass-box i {
   text-align: center;  
   box-shadow: 0 2px 12px rgba(0,0,0,.08);
 }
+
 .register-logo {  
   width: 70px;  
   height: 70px;  
@@ -399,17 +825,19 @@ body.dark .pass-box i {
   justify-content: center;  
   font-size: 32px;
 }
+
 .register-card h2 {  
   margin: 0;  
   font-size: 24px;
 }
+
 .register-card p {  
   margin: 8px 0 20px;  
   color: #65676b;  
   font-size: 14px;
 }
 
-/* 2. Form Inputs, Selects & Checkboxes */
+/* FORM ELEMENTS */
 .register-form input,
 .register-form select {  
   width: 100%;  
@@ -421,6 +849,7 @@ body.dark .pass-box i {
   outline: none;  
   background: #fff;
 }
+
 .check-box {  
   display: flex;  
   align-items: center;  
@@ -430,32 +859,37 @@ body.dark .pass-box i {
   margin-bottom: 12px;  
   cursor: pointer;
 }
+
 .check-box input {  
   width: 16px;  
   height: 16px;  
   accent-color: #1877f2;  
   margin: 0;
 }
+
 .check-box a {  
   color: #1877f2;  
   text-decoration: none;
 }
 
-/* 3. Birthday Selection Layout */
+/* BIRTHDAY SELECTION */
 .birthday-box {  
   margin-bottom: 12px;  
   text-align: left;
 }
+
 .birthday-box label {  
   display: block;  
   font-size: 14px;  
   margin-bottom: 6px;  
   color: #65676b;
 }
+
 .birthday-row {  
   display: flex;  
   gap: 8px;
 }
+
 .birthday-row select {  
   flex: 1;  
   height: 48px;  
@@ -465,7 +899,7 @@ body.dark .pass-box i {
   outline: none;
 }
 
-/* 4. Buttons & Interactive Links */
+/* BUTTONS & INTERACTIVE LINKS */
 .register-form button {  
   width: 100%;  
   height: 48px;  
@@ -476,15 +910,17 @@ body.dark .pass-box i {
   font-weight: 600;  
   cursor: pointer;
 }
+
 .register-divider {  
   margin: 18px 0 12px;  
   color: #65676b;  
   font-size: 14px;
 }
+
 .login-link {  
   display: block;  
-  width: 100%; 
-  height: 48px; 
+  width: 100%;  
+  height: 48px;  
   text-align: center;  
   padding: 12px 20px;  
   border-radius: 12px;  
@@ -495,32 +931,39 @@ body.dark .pass-box i {
   box-sizing: border-box;
 }
 
-/* 🌙 Dark Mode (At the end of Part 3) */
+/* DARK MODE REGISTER */
 body.dark .register-card {  
   background: #1c1c1c;  
   box-shadow: none;
 }
+
 body.dark .register-card h2 {  
   color: #fff;
 }
+
 body.dark .register-card p,
 body.dark .register-divider,
 body.dark .birthday-box label {  
   color: #b0b3b8;
 }
+
 body.dark .register-form input,
 body.dark .register-form select {  
   background: #242526;  
   border-color: #3a3b3c;  
   color: #fff;
 }
+
 body.dark .login-link {  
   background: #2ea043;
 }
+
 body.dark .check-box {  
   color: #b0b3b8;
 }
+
 body.dark .check-box a {  
   color: #4ea1ff;
 }
+
 
