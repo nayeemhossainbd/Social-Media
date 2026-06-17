@@ -224,9 +224,10 @@ body.dark .close-btn {
   align-items: center;  
   flex-wrap: nowrap;  
   overflow-x: hidden;  
-  padding: 8px 4px;  
+  padding: 0;  
   background: #fff;  
   border-top: 1px solid #ddd;
+  box-shadow:0 4px 12px rgba(0,0,0,0.12);
 }
 
 /* ICON ITEM */
@@ -259,6 +260,7 @@ body.dark .close-btn {
 body.dark .app-footer {  
   background: #1c1e22;  
   border-top: 1px solid #2a2d33;
+  box-shadow:0 6px 18px rgba(0,0,0,0.45);
 }
 
 body.dark .app-footer a {  
@@ -742,6 +744,7 @@ body.dark .load-more:hover {
   background: #2a2d33;
 }
 
+
 /* ==========================================
    PART 7: VISIBILITY TOGGLE STYLES
    ========================================== */
@@ -754,5 +757,29 @@ body.dark .load-more:hover {
 /* HIDE ELEMENT */
 .hide {
   display: none !important;
+}
+
+
+/* ==========================================
+   PART 7: ACTIVE TAB STYLES
+   ========================================== */
+/* LIGHT MODE */
+.active-tab{
+background:#f2f4f7;
+color:#1c1c1c!important;
+}
+
+.active-tab i{
+color:#1c1c1c!important;
+}
+
+/* DARK MODE */
+body.dark .active-tab{
+background:#2a2d35;
+color:#f1f1f1!important;
+}
+
+body.dark .active-tab i{
+color:#f1f1f1!important;
 }
 
