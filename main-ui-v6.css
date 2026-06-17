@@ -38,6 +38,7 @@ a:active {
   padding: 10px 12px;  
   background: #fff;  
   border-bottom: 1px solid #ddd;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* ICONS */
@@ -174,6 +175,7 @@ body.dark a {
 body.dark .app-header {  
   background: #1c1e22;  
   border-bottom: 1px solid #2a2d33;
+  box-shadow:0 6px 18px rgba(0,0,0,0.5);
 }
 
 /* SIDEBAR DARK */
