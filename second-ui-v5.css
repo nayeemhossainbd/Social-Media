@@ -126,7 +126,7 @@
   flex-wrap: wrap;
 }
 
-.btn {
+.profile-btn {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -137,17 +137,17 @@
   font-weight: 500;
 }
 
-.follow {
+.profile-follow {
   background: #1877f2;
   color: #fff;
 }
 
-.message {
+.profile-message {
   background: #e4e6eb;
   color: #050505;
 }
 
-.edit {
+.profile-edit {
   background: #f0f2f5;
   color: #050505;
 }
@@ -183,7 +183,7 @@
 
 /* Bio Card Styles */
 
-.bio-card{
+.bio-card {
   display:block;
   width:100%;
   background:#f8f9fb;
@@ -194,7 +194,7 @@
   font-family:Arial;
 }
 
-.bio-text{
+.bio-text {
   display:flex;
   align-items:center;
   justify-content:center;
@@ -204,17 +204,17 @@
   text-align:center;
 }
 
-.bio-quote{
+.bio-quote {
   font-size:16px;
   color:#888;
   line-height:1;
 }
 
-.bio-quote-left{
+.bio-quote-left {
   margin-right:2px;
 }
 
-.bio-quote-right{
+.bio-quote-right {
   margin-left:2px;
 }
 
@@ -236,19 +236,19 @@ body.dark .profile-name p {
   color: #b0b3b8;
 }
 
-body.dark .message {
+body.dark .profile-message {
   background: #3a3b3c;
   color: #e4e6eb;
 }
 
-body.dark .edit {
+body.dark .profile-edit {
   background: #3a3b3c;
   color: #e4e6eb;
 }
 
 body.dark .profile-tabs {
   background: #242526;
-  border: 1px solid #111;
+  border: 1px solid #303540;
 }
 
 body.dark .profile-tabs a {
@@ -284,14 +284,14 @@ body.dark .edit-cover:hover {
   background: rgba(255, 255, 255, 0.25);
 }
 
-body.dark .bio-card{
+body.dark .bio-card {
   background:#1f2229;
   color:#f1f1f1;
   box-shadow:0 4px 14px rgba(0,0,0,0.5);
   border:1px solid #2a2d35;
 }
 
-body.dark .bio-quote{
+body.dark .bio-quote {
   color:#aaa;
 }
 
