@@ -2,119 +2,107 @@
    PART 1: PROFILE PAGE
    ========================================== */
 
-/* PROFILE PAGE */
+/* PAGE */
 .profile-page {
-  background: #f0f2f5;
+  background:#f0f2f5;
 }
 
 /* COVER */
-.profile-cover-photo {
-  position: relative !important;
-  overflow: visible !important;
+.profile-cover {
+  position:relative;
 }
 
-.profile-cover-photo img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
+.profile-cover img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;
 }
 
-/* COVER EDIT */
-.edit-cover-photo {
-  position: absolute !important;
-  right: 12px;
-  bottom: 12px;
-  width: 36px;
-  height: 36px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.2s;
-  z-index: 9999;
-}
-
-.edit-cover-photo:hover {
-  background: rgba(0, 0, 0, 0.75);
+/* COVER BUTTON (flex safe overlay) */
+.cover-btn {
+  position:absolute;
+  right:12px;
+  bottom:12px;
+  width:36px;
+  height:36px;
+  background:rgba(0,0,0,.6);
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  z-index:5;
 }
 
 /* HEADER */
-.profile-header-page {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  background: #fff;
-  margin-top: -20px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+.profile-header {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px;
+  background:#fff;
+  margin-top:-20px;
+  border-radius:12px 12px 0 0;
 }
 
-/* AVATAR */
-.profile-avatar-photo {
-  position: relative !important;
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
-  overflow: visible !important;
+/* AVATAR WRAP (key fix) */
+.avatar-wrap {
+  position:relative;
+  width:80px;
+  height:80px;
+  flex:0 0 80px;
 }
 
-.profile-avatar-photo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  background: #fff;
-  border: 3px solid #fff;
+/* AVATAR BOX */
+.avatar-box {
+  width:100%;
+  height:100%;
 }
 
-/* AVATAR EDIT */
-.edit-avatar-photo {
-  position: absolute !important;
-  right: 0;
-  bottom: 0;
-  width: 28px;
-  height: 28px;
-  background: #1877f2;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  border: 2px solid #fff;
-  text-decoration: none;
-  transition: 0.2s;
-  z-index: 9999;
+.avatar-box img {
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #fff;
+  background:#fff;
+  display:block;
 }
 
-.edit-avatar-photo:hover {
-  background: #166fe5;
+/* AVATAR BUTTON (safe overlay inside same flow) */
+.avatar-btn {
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:28px;
+  height:28px;
+  background:#1877f2;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  border:2px solid #fff;
+  z-index:5;
 }
 
-/* NAME SECTION */
-.profile-name {
-  margin-left: 10px;
-}
-
+/* NAME */
 .profile-name h2 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 700;
-  color: #111827;
+  margin:0;
+  font-size:20px;
+  font-weight:700;
 }
 
 .profile-name p {
-  margin: 4px 0 0;
-  font-size: 14px;
-  color: #65676b;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  margin:4px 0 0;
+  font-size:14px;
+  color:#65676b;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
 /* ACTION BUTTONS */
