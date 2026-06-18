@@ -303,7 +303,7 @@ body.dark .app-footer a:hover {
 }
 
 /* INPUT */
-.post-top input {  
+.post-top input, .post-top textarea {  
   flex: 1;  
   min-width: 0;  
   border: none;  
