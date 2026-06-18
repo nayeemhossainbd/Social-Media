@@ -317,18 +317,16 @@ body.dark .app-footer a:hover {
 .post-top textarea {
   flex:1;
   min-width:0;
-  border:none;
+  border:1px solid #dcdcdc;
   outline:none;
   font-size:15px;
   line-height:1.4;
-  background:transparent;
+  background:#fff;
   color:#111;
-  resize:none;
-  padding:10px 0;
-  height:80px;
-  min-height:80px;
-  max-height:200px;
-  overflow:hidden;
+  resize:vertical;
+  padding:10px;
+  border-radius:10px;
+  overflow:auto;
 }
 
 .post-top textarea::placeholder {
@@ -414,6 +412,7 @@ body.dark .post-actions {
 /* Textarea */
 body.dark .post-top textarea {
   color:#f1f1f1;
+  border:1px solid #3a3f4a;
 }
 
 body.dark .post-top textarea::placeholder {
