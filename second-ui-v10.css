@@ -8,11 +8,11 @@
 }
 
 /* COVER */
-.profile-cover {
+.profile-cover-photo {
   position: relative;
 }
 
-.profile-cover img {
+.profile-cover-photo img {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -20,7 +20,7 @@
 }
 
 /* COVER EDIT */
-.edit-cover {
+.edit-cover-photo {
   position: absolute;
   right: 12px;
   bottom: 12px;
@@ -37,12 +37,12 @@
   transition: 0.2s;
 }
 
-.edit-cover:hover {
+.edit-cover-photo:hover {
   background: rgba(0, 0, 0, 0.75);
 }
 
 /* HEADER */
-.profile-header {
+.profile-header-page {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -53,14 +53,14 @@
 }
 
 /* AVATAR */
-.profile-avatar {
+.profile-avatar-photo {
   position: relative;
   width: 80px;
   height: 80px;
   flex-shrink: 0;
 }
 
-.profile-avatar img {
+.profile-avatar-photo img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -70,7 +70,7 @@
 }
 
 /* AVATAR EDIT */
-.edit-avatar {
+.edit-avatar-photo {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -88,7 +88,7 @@
   transition: 0.2s;
 }
 
-.edit-avatar:hover {
+.edit-avatar-photo:hover {
   background: #166fe5;
 }
 
