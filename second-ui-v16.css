@@ -397,7 +397,7 @@ body.dark .bio-quote {
 }
 
 /* DARK MODE EDIT PROFILE */
-body.dark .edit-profile-page {
+body.dark .ui-page {
   background: #18191a;
 }
 
@@ -414,9 +414,9 @@ body.dark .ui-form-card {
   background: #242526;
 }
 
-body.dark .edit-block input,
-body.dark .edit-block textarea,
-body.dark .edit-block select {
+body.dark .ui-block input,
+body.dark .ui-block textarea,
+body.dark .ui-block select {
   background: #3a3b3c;
   border-color: #555;
   color: #e4e6eb;
