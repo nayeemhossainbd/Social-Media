@@ -202,72 +202,88 @@
   margin-left:2px;
 }
 
-/* DARK MODE PROFILE */
+/* DARK MODE */
 body.dark .profile-page {
-  background: #18191a;
+  background:#0f1115;
 }
 
-body.dark .profile-header,
-body.dark .profile-actions {
-  background: #242526;
+/* COVER */
+body.dark .profile-cover img {
+  filter:brightness(0.75) contrast(1.05);
 }
 
+/* HEADER */
+body.dark .profile-header {
+  background:#1a1d24;
+  border-top:1px solid #2a2f3a;
+}
+
+/* NAME */
 body.dark .profile-name h2 {
-  color: #e4e6eb;
+  color:#e6e6e6;
 }
 
 body.dark .profile-name p {
-  color: #b0b3b8;
+  color:#a9b0bb;
+}
+
+/* COVER BUTTON */
+body.dark .cover-btn {
+  background:rgba(255,255,255,0.12);
+  color:#fff;
+}
+
+body.dark .cover-btn:hover {
+  background:rgba(255,255,255,0.18);
+}
+
+/* AVATAR */
+body.dark .avatar-img {
+  border-color:#1a1d24;
+  background:#1a1d24;
+}
+
+/* AVATAR BUTTON */
+body.dark .avatar-btn {
+  background:#2d6cdf;
+  border-color:#1a1d24;
+}
+
+body.dark .avatar-btn:hover {
+  background:#1f5bd6;
+}
+
+/* PROFILE ACTION */
+body.dark .profile-actions {
+  background:#242526;
 }
 
 body.dark .profile-message {
-  background: #3a3b3c;
-  color: #e4e6eb;
+  background:#3a3b3c;
+  color:#e4e6eb;
 }
 
 body.dark .profile-edit {
-  background: #3a3b3c;
-  color: #e4e6eb;
+  background:#3a3b3c;
+  color:#e4e6eb;
 }
 
+/* TABS */
 body.dark .profile-tabs {
-  background: #242526;
-  border: 1px solid #303540;
+  background:#242526;
+  border:1px solid #303540;
 }
 
 body.dark .profile-tabs a {
-  color: #b0b3b8;
+  color:#b0b3b8;
 }
 
 body.dark .profile-tabs a:hover {
-  background: #3a3b3c;
-  color: #fff;
+  background:#3a3b3c;
+  color:#fff;
 }
 
-body.dark .profile-avatar img {
-  border-color: #242526;
-  background: #242526;
-}
-
-body.dark .edit-avatar {
-  background: #2d88ff;
-  border: 2px solid #242526;
-  color: #fff;
-}
-
-body.dark .edit-avatar:hover {
-  background: #1b74e4;
-}
-
-body.dark .edit-cover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #e4e6eb;
-}
-
-body.dark .edit-cover:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
-
+/* BIO */
 body.dark .bio-card {
   background:#1f2229;
   color:#f1f1f1;
