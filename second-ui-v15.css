@@ -301,7 +301,7 @@ body.dark .bio-quote {
    ========================================== */
 
 /* EDIT PROFILE PAGE */
-.edit-profile-page {
+.ui-page {
   background: #f0f2f5;
   min-height: 100vh;
 }
@@ -350,7 +350,7 @@ body.dark .bio-quote {
 }
 
 /* LABELS */
-.edit-block label {
+.ui-block label {
   font-size: 12px;
   color: #65676b;
   display: block;
@@ -358,9 +358,9 @@ body.dark .bio-quote {
 }
 
 /* INPUTS */
-.edit-block input, 
-.edit-block textarea, 
-.edit-block select {
+.ui-block input, 
+.ui-block textarea, 
+.ui-block select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -371,7 +371,7 @@ body.dark .bio-quote {
 }
 
 /* TEXTAREA */
-.edit-block textarea {
+.ui-block textarea {
   min-height: 80px;
   resize: none;
 }
