@@ -1025,3 +1025,83 @@ body.dark .check-box a {
 }
 
 
+/* ==========================================
+   PART 6: UNIVERSAL FROM UI
+   ========================================== */
+
+* {
+box-sizing:border-box;
+}
+
+body {
+margin:0;
+padding:0;
+}
+
+.form-page {
+max-width:420px;
+margin:auto;
+padding:10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+width:100%;
+margin-bottom:10px;
+padding:12px;
+border:1px solid #dcdcdc;
+border-radius:10px;
+font-size:14px;
+outline:none;
+background:#fff;
+color:#111;
+}
+
+textarea {
+min-height:100px;
+resize:vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+border-color:#1877f2;
+box-shadow:0 0 0 2px rgba(24,119,242,0.15);
+}
+
+input[type="submit"],
+button[type="submit"] {
+width:100%;
+margin-top:10px;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#1877f2;
+color:#fff;
+font-weight:600;
+cursor:pointer;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+background:#2a2d35;
+border:1px solid #3a3f4a;
+color:#f1f1f1;
+}
+
+body.dark input[type="submit"],
+body.dark button[type="submit"] {
+background:#1877f2;
+}
+
+
+
+
+
