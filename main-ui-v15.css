@@ -413,6 +413,7 @@ body.dark .post-actions {
 body.dark .post-top textarea {
   color:#f1f1f1;
   border:1px solid #3a3f4a;
+  background:#2a2d35;
 }
 
 body.dark .post-top textarea::placeholder {
