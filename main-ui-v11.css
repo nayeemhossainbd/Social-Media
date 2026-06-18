@@ -513,6 +513,13 @@ body.dark .add-story {
   text-transform: capitalize;
 }
 
+.post-user a {
+  display: inline-block;
+  width: fit-content;
+  text-decoration: none;
+  color: inherit;
+}
+
 .post-user strong {  
   font-size: 16px;
 }
@@ -780,4 +787,5 @@ color:#f1f1f1!important;
 body.dark .active-tab i{
 color:#f1f1f1!important;
 }
+
 
