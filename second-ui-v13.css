@@ -3,24 +3,24 @@
    ========================================== */
 
 /* PAGE */
-.profile-page {
+.profile-page { 
   background:#f0f2f5;
 }
 
 /* COVER */
-.profile-cover {
+.profile-cover { 
   position:relative;
 }
 
-.profile-cover img {
+.profile-cover img { 
   width:100%;
   height:180px;
   object-fit:cover;
   display:block;
 }
 
-/* COVER BUTTON (flex safe overlay) */
-.cover-btn {
+/* COVER BUTTON */
+.cover-btn { 
   position:absolute;
   right:12px;
   bottom:12px;
@@ -37,7 +37,7 @@
 }
 
 /* HEADER */
-.profile-header {
+.profile-header { 
   display:flex;
   align-items:center;
   gap:12px;
@@ -47,21 +47,16 @@
   border-radius:12px 12px 0 0;
 }
 
-/* AVATAR WRAP (key fix) */
-.avatar-wrap {
+/* AVATAR WRAP */
+.avatar-wrap { 
   position:relative;
   width:80px;
   height:80px;
   flex:0 0 80px;
 }
 
-/* AVATAR BOX */
-.avatar-box {
-  width:100%;
-  height:100%;
-}
-
-.avatar-box img {
+/* AVATAR IMAGE */
+.avatar-img { 
   width:100%;
   height:100%;
   border-radius:50%;
@@ -71,8 +66,8 @@
   display:block;
 }
 
-/* AVATAR BUTTON (safe overlay inside same flow) */
-.avatar-btn {
+/* AVATAR BUTTON */
+.avatar-btn { 
   position:absolute;
   right:0;
   bottom:0;
@@ -90,13 +85,14 @@
 }
 
 /* NAME */
-.profile-name h2 {
+.profile-name h2 { 
   margin:0;
   font-size:20px;
   font-weight:700;
+  color:#111827;
 }
 
-.profile-name p {
+.profile-name p { 
   margin:4px 0 0;
   font-size:14px;
   color:#65676b;
