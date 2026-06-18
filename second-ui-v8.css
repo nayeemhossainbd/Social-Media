@@ -3,117 +3,122 @@
    ========================================== */
 
 /* PROFILE PAGE */
-.profile-page {
-  background: #f0f2f5;
+.profile-page{
+  background:#f0f2f5;
 }
 
 /* COVER */
-.profile-cover {
-  position: relative;
+.profile-cover{
+  position:relative !important;
+  overflow:visible;
 }
 
-.profile-cover img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
+.profile-cover img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;
 }
 
 /* COVER EDIT */
-.edit-cover {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
-  width: 36px;
-  height: 36px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.2s;
+.edit-cover{
+  position:absolute !important;
+  right:12px;
+  bottom:12px;
+  width:36px;
+  height:36px;
+  background:rgba(0,0,0,.6);
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:16px;
+  transition:.2s;
+  z-index:999;
 }
 
-.edit-cover:hover {
-  background: rgba(0, 0, 0, 0.75);
+.edit-cover:hover{
+  background:rgba(0,0,0,.75);
 }
 
 /* HEADER */
-.profile-header {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  background: #fff;
-  margin-top: -20px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+.profile-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px;
+  background:#fff;
+  margin-top:-20px;
+  border-radius:12px 12px 0 0;
+  position:relative;
+  z-index:2;
 }
 
 /* AVATAR */
-.profile-avatar {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
+.profile-avatar{
+  position:relative !important;
+  width:80px;
+  height:80px;
+  flex-shrink:0;
 }
 
-.profile-avatar img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: #fff;
-  border: 3px solid #fff;
+.profile-avatar img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  background:#fff;
+  border:3px solid #fff;
+  box-shadow:0 2px 8px rgba(0,0,0,.12);
+  display:block;
 }
 
 /* AVATAR EDIT */
-.edit-avatar {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 28px;
-  height: 28px;
-  background: #1877f2;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  border: 2px solid #fff;
-  text-decoration: none;
-  transition: 0.2s;
+.edit-avatar{
+  position:absolute !important;
+  right:0;
+  bottom:0;
+  width:28px;
+  height:28px;
+  background:#1877f2;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  border:2px solid #fff;
+  text-decoration:none;
+  transition:.2s;
+  z-index:999;
 }
 
-.edit-avatar:hover {
-  background: #166fe5;
+.edit-avatar:hover{
+  background:#166fe5;
 }
 
-/* NAME SECTION */
-.profile-name {
-  margin-left: 10px;
-  min-width: 0;
+/* NAME */
+.profile-name{
+  min-width:0;
 }
 
-.profile-name h2 {
-  font-size: 16px;
-  margin: 0;
-  color: #050505;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.profile-name h2{
+  margin:0;
+  font-size:20px;
+  font-weight:700;
+  color:#111827;
+  line-height:1.2;
 }
 
-.profile-name p {
-  font-size: 12px;
-  color: #65676b;
-  margin: 2px 0 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.profile-name p{
+  margin:4px 0 0;
+  font-size:14px;
+  color:#65676b;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
 /* ACTION BUTTONS */
