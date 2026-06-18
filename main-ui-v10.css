@@ -17,14 +17,11 @@ body {
 }
 
 a {
-  color: #65676b;
+  color: #000;
   text-decoration: none;
 }
 a:hover {
   color: #4f5256;
-}
-a:active {
-  color: #3f4246;
 }
 
 /* HEADER LIGHT */
@@ -168,7 +165,7 @@ body.dark {
 
 /* Dark Mode State */
 body.dark a {
-  color: #ffffff;
+  color: #fff;
 }
 
 /* HEADER DARK (LIGHTER THAN BLACK) */
