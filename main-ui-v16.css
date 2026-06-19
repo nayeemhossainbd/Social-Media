@@ -300,6 +300,7 @@ body.dark .app-footer a:hover {
 .post-top img {  
   width: 36px;  
   flex-shrink: 0;
+  border-radius: 50%;
 }
 
 /* INPUT */
