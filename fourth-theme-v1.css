@@ -1,0 +1,474 @@
+/* ==========================================================================
+   FRIENDS PAGE STYLES (Part 1)
+   ========================================================================== */
+
+/* FRIENDS PAGE */
+.users {
+  padding:10px;
+  background:#f0f2f5;
+}
+
+/* HEADER */
+.section-header {
+  background:#fff;
+  padding:10px 12px;
+  border-radius:10px;
+  margin:8px 0 10px;
+  border:1px solid #e4e6eb;
+}
+
+.section-header h2 {
+  font-size:15px;
+  font-weight:600;
+  color:#65676b;
+  margin:0;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.section-header h2 i {
+  font-size:18px;
+}
+
+.section-header p {
+  font-size:12px;
+  color:#8a8d91;
+  margin:2px 0 0;
+}
+
+/* LIST */
+.user-list {
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+/* CARD */
+.user-card {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px;
+  border-radius:10px;
+  background:#fff;
+}
+
+/* LEFT SIDE */
+.user-main {
+  display:flex;
+  align-items:center;
+  flex:1;
+  min-width:0;
+}
+
+.user-card img {
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  flex-shrink:0;
+}
+
+.user-info {
+  margin-left:8px;
+  min-width:0;
+}
+
+.user-info h3 {
+  font-size:13px;
+  font-weight:600;
+  margin:0;
+  color:#050505;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.user-info p {
+  font-size:12px;
+  color:#65676b;
+  margin:2px 0 0;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* BUTTONS */
+.user-actions {
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-shrink:0;
+}
+
+.follow-btn,
+.msg-btn {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  padding:5px 10px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:500;
+  text-decoration:none;
+  white-space:nowrap;
+}
+
+.follow-btn {
+  background:#1877f2;
+  color:#fff;
+}
+
+.msg-btn {
+  background:#e4e6eb;
+  color:#050505;
+}
+
+.follow-btn i,
+.msg-btn i {
+  font-size:14px;
+}
+
+/* DARK MODE */
+body.dark .users {
+  background:#18191a;
+}
+
+body.dark .section-header {
+  background:#242526;
+  border-color:#3a3b3c;
+}
+
+body.dark .section-header h2 {
+  color:#b0b3b8;
+}
+
+body.dark .section-header p {
+  color:#8a8d91;
+}
+
+body.dark .user-card {
+  background:#242526;
+}
+
+body.dark .user-info h3 {
+  color:#e4e6eb;
+}
+
+body.dark .user-info p {
+  color:#b0b3b8;
+}
+
+body.dark .msg-btn {
+  background:#3a3b3c;
+  color:#e4e6eb;
+}
+
+/* ==========================================================================
+   ADD PROFILE PHOTO (Part 2)
+   ========================================================================== */
+
+.change-photo-wrap {
+  max-width:420px;
+  margin:auto;
+  padding:20px;
+  background:#fff;
+  border:1px solid #ececec;
+  border-radius:14px;
+  font-family:Arial;
+  text-align:center;
+  transition:0.3s;
+}
+
+/* HEADER */
+.change-photo-header {
+  margin-bottom:14px;
+}
+
+.change-photo-header .title {
+  font-size:18px;
+  font-weight:600;
+  color:#111;
+}
+
+.change-photo-header .sub {
+  font-size:13px;
+  color:#666;
+  margin-top:4px;
+}
+
+/* PREVIEW */
+.change-photo-preview {
+  display:flex;
+  justify-content:center;
+  margin:16px 0;
+}
+
+.change-photo-preview img {
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid #ddd;
+}
+
+/* UPLOAD */
+.change-photo-upload {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:12px;
+  border:1px solid #dcdcdc;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:14px;
+  color:#333;
+  background:#fafafa;
+  transition:0.2s;
+}
+
+.change-photo-upload:hover {
+  background:#f2f2f2;
+}
+
+/* BUTTON */
+.change-photo-save {
+  width:100%;
+  margin-top:14px;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#1877f2;
+  color:#fff;
+  font-weight:600;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.change-photo-save:hover {
+  background:#166fe5;
+}
+
+/* DARK MODE */
+body.dark .change-photo-wrap {
+  background:#1f2229;
+  border:1px solid #2a2d35;
+}
+
+body.dark .change-photo-header .title {
+  color:#f1f1f1;
+}
+
+body.dark .change-photo-header .sub {
+  color:#aaa;
+}
+
+body.dark .change-photo-preview img {
+  border:1px solid #333;
+}
+
+body.dark .change-photo-upload {
+  background:#2a2d35;
+  border:1px solid #3a3f4a;
+  color:#f1f1f1;
+}
+
+body.dark .change-photo-upload:hover {
+  background:#343846;
+}
+
+/* ==========================================================================
+   CHOOSE PROFILE PHOTO (Part 3)
+   ========================================================================== */
+
+.change-photo-card {
+  max-width:420px;
+  margin:10px;
+  padding:18px;
+  background:#fff;
+  border:1px solid #e4e6eb;
+  border-radius:14px;
+  box-shadow:0 1px 2px rgba(0,0,0,0.06);
+  font-family:Arial;
+}
+
+/* DESCRIPTION */
+.change-photo-desc {
+  font-size:13px;
+  color:#666;
+  line-height:1.5;
+  text-align:center;
+  margin-bottom:14px;
+  padding:0 6px;
+}
+
+/* SELECTOR */
+.change-photo-selector {
+  display:flex;
+  gap:10px;
+}
+
+.change-photo-tab {
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid #dcdcdc;
+  background:#fff;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+  color:#333;
+  transition:0.2s;
+}
+
+.change-photo-tab i {
+  font-size:18px;
+}
+
+.change-photo-tab:hover {
+  border-color:#1877f2;
+  color:#1877f2;
+}
+
+.change-photo-tab.active {
+  background:#1877f2;
+  color:#fff;
+  border-color:#1877f2;
+}
+
+/* DARK MODE */
+body.dark .change-photo-card {
+  background:#1f2229;
+  border:1px solid #2a2d35;
+}
+
+body.dark .change-photo-desc {
+  color:#aaa;
+}
+
+body.dark .change-photo-tab {
+  background:#2a2d35;
+  border:1px solid #3a3f4a;
+  color:#f1f1f1;
+}
+
+body.dark .change-photo-tab.active {
+  background:#1877f2;
+  border-color:#1877f2;
+  color:#fff;
+}
+
+/* ==========================================================================
+   PASTE PROFILE PHOTO (Part 4)
+   ========================================================================== */
+
+.change-photo-wrap {
+  max-width:420px;
+  margin:auto;
+  padding:20px;
+  background:#fff;
+  border:1px solid #ececec;
+  border-radius:14px;
+  font-family:Arial;
+  text-align:center;
+  transition:0.3s;
+}
+
+/* HEADER */
+.change-photo-header {
+  margin-bottom:14px;
+}
+
+.change-photo-header .title {
+  font-size:18px;
+  font-weight:600;
+  color:#111;
+}
+
+.change-photo-header .sub {
+  font-size:13px;
+  color:#666;
+  margin-top:4px;
+}
+
+/* PREVIEW */
+.change-photo-preview {
+  display:flex;
+  justify-content:center;
+  margin:16px 0;
+}
+
+.change-photo-preview img {
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid #ddd;
+}
+
+/* INPUT */
+.change-photo-input {
+  width:100%;
+  padding:12px;
+  border:1px solid #dcdcdc;
+  border-radius:10px;
+  font-size:14px;
+  box-sizing:border-box;
+  margin-bottom:12px;
+  outline:none;
+}
+
+.change-photo-input:focus {
+  border-color:#1877f2;
+}
+
+/* BUTTON */
+.change-photo-save {
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#1877f2;
+  color:#fff;
+  font-weight:600;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.change-photo-save:hover {
+  background:#166fe5;
+}
+
+/* DARK MODE */
+body.dark .change-photo-wrap {
+  background:#1f2229;
+  border:1px solid #2a2d35;
+}
+
+body.dark .change-photo-header .title {
+  color:#f1f1f1;
+}
+
+body.dark .change-photo-header .sub {
+  color:#aaa;
+}
+
+body.dark .change-photo-input {
+  background:#2a2d35;
+  border:1px solid #3a3f4a;
+  color:#f1f1f1;
+}
+
+body.dark .change-photo-input::placeholder {
+  color:#888;
+}
+
+
+
+
