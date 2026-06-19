@@ -801,8 +801,9 @@ body.dark .load-more:hover {
 
 
 /* ==========================================
-   PART 7: ACTIVE TAB STYLES
+   PART 8: ACTIVE TAB STYLES
    ========================================== */
+
 /* LIGHT MODE */
 .active-tab{
 background:#f2f4f7;
@@ -822,5 +823,66 @@ color:#f1f1f1!important;
 body.dark .active-tab i{
 color:#f1f1f1!important;
 }
+
+
+/* ==========================================
+   PART 9: Empty Card STYLES
+   ========================================== */
+/* Empty Card */
+.empty-card {
+  width:100%;
+  max-width:500px;
+  margin:10px 0;
+  box-sizing:border-box;
+  text-align:center;
+  background:#fff;
+  border:1px solid #e4e6eb;
+  border-radius:12px;
+  padding:30px 20px;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.empty-card i {
+  font-size:42px;
+  color:#65676b;
+  display:block;
+  margin-bottom:10px;
+}
+
+.empty-card-title {
+  font-size:16px;
+  font-weight:600;
+  color:#1c1e21;
+  margin:0 0 6px;
+}
+
+.empty-card-text {
+  font-size:14px;
+  color:#65676b;
+  margin:0;
+  line-height:1.5;
+}
+
+/* Dark Mode */
+body.dark .empty-card {
+  background:#1f2229;
+  border:1px solid #2a2d35;
+}
+
+body.dark .empty-card i {
+  color:#aaa;
+}
+
+body.dark .empty-card-title {
+  color:#f1f1f1;
+}
+
+body.dark .empty-card-text {
+  color:#b0b3b8;
+}
+
+
 
 
