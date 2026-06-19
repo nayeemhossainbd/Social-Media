@@ -166,7 +166,7 @@ body.dark .msg-btn {
 }
 
 /* ==========================================================================
-   ADD PROFILE PHOTO (Part 2)
+   ADD PROFILE PHOTO (Part 2 - Unified Template with Input Styles)
    ========================================================================== */
 
 .change-photo-wrap {
@@ -213,7 +213,7 @@ body.dark .msg-btn {
   border:1px solid #ddd;
 }
 
-/* UPLOAD */
+/* UPLOAD (Part 2 Original) */
 .change-photo-upload {
   display:flex;
   align-items:center;
@@ -231,6 +231,22 @@ body.dark .msg-btn {
 
 .change-photo-upload:hover {
   background:#f2f2f2;
+}
+
+/* INPUT (Merged from Part 4) */
+.change-photo-input {
+  width:100%;
+  padding:12px;
+  border:1px solid #dcdcdc;
+  border-radius:10px;
+  font-size:14px;
+  box-sizing:border-box;
+  margin-bottom:12px;
+  outline:none;
+}
+
+.change-photo-input:focus {
+  border-color:#1877f2;
 }
 
 /* BUTTON */
@@ -277,6 +293,16 @@ body.dark .change-photo-upload {
 
 body.dark .change-photo-upload:hover {
   background:#343846;
+}
+
+body.dark .change-photo-input {
+  background:#2a2d35;
+  border:1px solid #3a3f4a;
+  color:#f1f1f1;
+}
+
+body.dark .change-photo-input::placeholder {
+  color:#888;
 }
 
 /* ==========================================================================
@@ -362,111 +388,6 @@ body.dark .change-photo-tab.active {
   background:#1877f2;
   border-color:#1877f2;
   color:#fff;
-}
-
-/* ==========================================================================
-   PASTE PROFILE PHOTO (Part 4)
-   ========================================================================== */
-
-.paste-photo-wrap {
-  max-width:420px;
-  margin:auto;
-  padding:20px;
-  background:#fff;
-  border:1px solid #ececec;
-  border-radius:14px;
-  font-family:Arial;
-  text-align:center;
-  transition:0.3s;
-}
-
-/* HEADER */
-.paste-photo-header {
-  margin-bottom:14px;
-}
-
-.paste-photo-header .title {
-  font-size:18px;
-  font-weight:600;
-  color:#111;
-}
-
-.paste-photo-header .sub {
-  font-size:13px;
-  color:#666;
-  margin-top:4px;
-}
-
-/* PREVIEW */
-.paste-photo-preview {
-  display:flex;
-  justify-content:center;
-  margin:16px 0;
-}
-
-.paste-photo-preview img {
-  width:120px;
-  height:120px;
-  border-radius:50%;
-  object-fit:cover;
-  border:1px solid #ddd;
-}
-
-/* INPUT */
-.paste-photo-input {
-  width:100%;
-  padding:12px;
-  border:1px solid #dcdcdc;
-  border-radius:10px;
-  font-size:14px;
-  box-sizing:border-box;
-  margin-bottom:12px;
-  outline:none;
-}
-
-.paste-photo-input:focus {
-  border-color:#1877f2;
-}
-
-/* BUTTON */
-.paste-photo-save {
-  width:100%;
-  padding:12px;
-  border:none;
-  border-radius:10px;
-  background:#1877f2;
-  color:#fff;
-  font-weight:600;
-  font-size:14px;
-  cursor:pointer;
-}
-
-.paste-photo-save:hover {
-  background:#166fe5;
-}
-
-/* DARK MODE */
-body.dark .paste-photo-wrap {
-  background:#1f2229;
-  border:1px solid #2a2d35;
-}
-
-body.dark .paste-photo-header .title {
-  color:#f1f1f1;
-}
-
-body.dark .paste-photo-header .sub {
-  color:#aaa;
-}
-
-body.dark .paste-photo-input {
-  background:#2a2d35;
-  border:1px solid #3a3f4a;
-  color:#f1f1f1;
-}
-
-body.dark .paste-photo-input::placeholder {
-  color:#888;
 }
 
 
