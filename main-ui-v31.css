@@ -1189,6 +1189,39 @@ body.dark .card {
   justify-content: center;
 }
 
+.msg-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #e4e6eb;
+}
+
+.msg-input input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* SAME STYLE */
+.msg-input input[type="submit"],
+.msg-input button {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #1877f2;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* DARK MODE */
 body.dark .chat-page {
   background: #18191a;
@@ -1234,6 +1267,24 @@ body.dark .chat-input input[type="text"] {
 
 body.dark .chat-input button {
   background: #2d88ff;
+}
+
+body.dark .msg-input {
+  background: #242526;
+  border-top: 1px solid #3a3b3c;
+}
+
+body.dark .msg-input input[type="text"] {
+  background: #3a3b3c;
+  border: 1px solid #3a3b3c;
+  color: #e4e6eb;
+}
+
+/* SAME STYLE */
+body.dark .msg-input input[type="submit"],
+body.dark .msg-input button {
+  background: #2d88ff;
+  color: #fff;
 }
 
 
