@@ -889,13 +889,6 @@ body.dark .empty-card-text {
    PART 10: SEND MESSAGES DEFAULT
    ================================================================================*/
 
-/* LIGHT MODE */
-form {
-  padding: 10px;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
 /* TEXTAREA */
 textarea[name="message_text"] {
   width: calc(100% - 20px);
@@ -1048,7 +1041,7 @@ body.dark .card {
 
 
 /* ================================================================================
-   PART 13: CHAT AND MESSAGES
+   PART 13: CHAT AND MESSAGE
    ================================================================================*/
 
 /* MESSAGE PAGE */
