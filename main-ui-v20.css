@@ -828,7 +828,8 @@ color:#f1f1f1!important;
 /* ==========================================
    PART 9: Empty Card STYLES
    ========================================== */
-/* Empty Card */
+
+/* EMPTY CARD */
 .empty-card {
   width:100%;
   max-width:500px;
@@ -865,7 +866,7 @@ color:#f1f1f1!important;
   line-height:1.5;
 }
 
-/* Dark Mode */
+/* DARK MODE */
 body.dark .empty-card {
   background:#1f2229;
   border:1px solid #2a2d35;
@@ -882,6 +883,136 @@ body.dark .empty-card-title {
 body.dark .empty-card-text {
   color:#b0b3b8;
 }
+
+
+/* ================================================================================
+   PART 10: SEND MESSAGES DEFAULT
+   ================================================================================*/
+
+/* LIGHT MODE */
+form {
+  margin: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* TEXTAREA */
+textarea[name="message_text"] {
+  width: calc(100% - 20px);
+  height: 42px;
+  padding: 10px 12px;
+  margin: 10px 10px 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  background: #fff;
+  display: block;
+}
+
+/* SUBMIT */
+input[name="message_submit"] {
+  width: calc(100% - 20px);
+  height: 42px;
+  margin: 0 10px 10px 10px;
+  border: none;
+  border-radius: 20px;
+  background: #1877f2;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+}
+
+/* DARK MODE */
+body.dark textarea[name="message_text"] {
+  background: #3a3b3c;
+  border: 1px solid #3a3b3c;
+  color: #e4e6eb;
+}
+
+body.dark input[name="message_submit"] {
+  background: #2d88ff;
+}
+
+textarea[name="message_text"],
+input[name="message_submit"] {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+textarea[name="message_text"]:focus {
+  border-color: #1877f2;
+}
+
+body.dark textarea[name="message_text"]:focus {
+  border-color: #2d88ff;
+}
+
+input[name="message_submit"]:hover {
+  background: #1565c0;
+}
+
+body.dark input[name="message_submit"]:hover {
+  background: #4cc3ff;
+}
+
+input[name="message_submit"]:active {
+  transform: scale(0.98);
+}
+
+
+/* ================================================================================
+   PART 11: DEFAULT NOTIFY CLASS
+   ================================================================================*/
+
+/* LIGHT MODE */
+.ok {
+  margin: 10px;
+  padding: 10px;
+  background: #e7f8ed;
+  color: #1a7f37;
+  border: 1px solid #b7ebc6;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.success {
+  margin: 10px;
+  padding: 10px;
+  background: #e7f8ed;
+  color: #1a7f37;
+  border: 1px solid #b7ebc6;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.error {
+  margin: 10px;
+  padding: 10px;
+  background: #fde8e8;
+  color: #b91c1c;
+  border: 1px solid #f5b5b5;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* DARK MODE */
+
+body.dark .ok,
+body.dark .success {
+  background: #1f3a2a;
+  color: #7dffb2;
+  border: 1px solid #2b5a40;
+}
+
+body.dark .error {
+  background: #3a1f1f;
+  color: #ff7b7b;
+  border: 1px solid #5a2b2b;
+}
+
+
 
 
 
