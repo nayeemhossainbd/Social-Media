@@ -82,6 +82,18 @@ a:hover {
   align-items: center;
 }
 
+/* MESSAGE COUNT */
+.msg-count {
+  font-size: 9px;
+  background: #ff3b30;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  position: relative;
+  top: -5px;
+  line-height: 1;
+}
+
 /* SIDEBAR */
 .drawer {  
   position: fixed;  
