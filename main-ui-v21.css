@@ -997,6 +997,11 @@ input[name="message_submit"]:active {
   font-size: 14px;
 }
 
+
+/* ================================================================================
+   PART 12: DEFAULT DIV CLASS
+   ================================================================================*/
+
 /* DARK MODE */
 
 body.dark .ok,
@@ -1012,6 +1017,34 @@ body.dark .error {
   border: 1px solid #5a2b2b;
 }
 
+/* LIGHT MODE */
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #e4e6eb;
+}
+
+/* DARK MODE */
+body.dark .container {
+  background: #242526;
+}
+
+body.dark .card {
+  background: #242526;
+  border: 1px solid #3a3b3c;
+}
 
 
 
