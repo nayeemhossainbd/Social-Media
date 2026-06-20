@@ -891,7 +891,7 @@ body.dark .empty-card-text {
 
 /* LIGHT MODE */
 form {
-  margin: 10px;
+  padding: 10px;
   font-size: 14px;
   line-height: 1.4;
 }
