@@ -1109,8 +1109,7 @@ body.dark .card {
 .msg-body {
   position: relative;
   display: inline-block;
-  min-width: 50%;
-  max-width: 75%;
+  max-width: 50%;
 }
 
 /* MESSAGE TEXT */
